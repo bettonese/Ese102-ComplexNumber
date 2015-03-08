@@ -17,7 +17,7 @@ public class Ese102 {
         
         boolean valoreValido=false;
         while(!valoreValido){
-    		System.out.println("Coordinata X: ");
+    		System.out.println("Inserire coordinata X: ");
     		line = tastiera.readLine();
     		try{
     			n1 = Double.valueOf(line).doubleValue();
@@ -29,7 +29,7 @@ public class Ese102 {
     	}
     	valoreValido = false;
         while(!valoreValido){
-    		System.out.println("Coordinata Y: ");
+    		System.out.println("Inserire coordinata Y: ");
     		line = tastiera.readLine();
     		try{
     			n2 = Double.valueOf(line).doubleValue();
@@ -44,7 +44,7 @@ public class Ese102 {
         System.out.println("\nil modulo è "+sr.getModulus());
         System.out.println("\nl'argomento è "+sr.getArgument());
         while(!valoreValido){
-    		System.out.println("Modulo: ");
+    		System.out.println("Inserire modulo: ");
     		line = tastiera.readLine();
     		try{
     			n1 = Double.valueOf(line).doubleValue();
@@ -56,7 +56,7 @@ public class Ese102 {
     	}
     	valoreValido = false;
         while(!valoreValido){
-    		System.out.println("Argomento: ");
+    		System.out.println("Inserire argomento: ");
     		line = tastiera.readLine();
     		try{
     			n2 = Double.valueOf(line).doubleValue();
