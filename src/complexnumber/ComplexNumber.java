@@ -115,5 +115,18 @@ public class ComplexNumber {
     public String toString(){
         return this.getRe() + "+(" + this.getIm() + ")i";
     }
+    
+    @Override
+    public boolean equals(Object ob){
+        boolean e = false;
+        if(ob instanceof ComplexNumber){
+            ComplexNumber i = (ComplexNumber)ob;
+            if(this.re == i.getRe() && this.im == i.getIm()){
+                e = true;
+            }
+        }
+        return e;
+    }
+    
 }
 
