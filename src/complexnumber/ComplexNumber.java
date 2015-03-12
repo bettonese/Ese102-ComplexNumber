@@ -116,8 +116,14 @@ public class ComplexNumber {
      */ 
     
     public void setPolar(double modulus, double argument){
-        this.im = Math.sin(argument*Math.PI/180)*modulus;
-        this.re = Math.cos(argument*Math.PI/180)*modulus;
+        if(modulus>=0){
+            this.im = Math.sin(argument*Math.PI/180)*modulus;
+            this.re = Math.cos(argument*Math.PI/180)*modulus;
+            
+        }
+        else
+            throw new IllegalArgumentException("Il modulo non può essere negativo");
+        
     }
     
     /**
