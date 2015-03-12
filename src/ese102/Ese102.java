@@ -108,7 +108,7 @@ public class Ese102 {
             valoreValido=false;
             
                 while(!valoreValido){
-                    System.out.println("Inserisci la parte reale da sommare a quella inserita all'inizio");
+                    System.out.println("Inserisci la parte reale ");
                     line=tastiera.readLine();
                     try{
                     re=Double.valueOf(line).doubleValue();
@@ -120,7 +120,7 @@ public class Ese102 {
             }
             valoreValido=false;
             while(!valoreValido){
-                System.out.println("Inserisci la parte immaginaria da sommare a quella inserita all'inizio");
+                System.out.println("Inserisci la parte immaginaria ");
                 line=tastiera.readLine();
                 try{
                     im=Double.valueOf(line).doubleValue();
@@ -137,7 +137,7 @@ public class Ese102 {
         else if(sw==4){
             valoreValido=false;
             while(!valoreValido){
-                System.out.println("Inserisci parte reale da sottrarre a quella iniziale");
+                System.out.println("Inserisci parte reale ");
                 line=tastiera.readLine();
                 try{
                     re=Double.valueOf(line).doubleValue();
@@ -149,7 +149,7 @@ public class Ese102 {
             }
             valoreValido=false;
             while(!valoreValido){
-                System.out.println("Inserisci parte immaginaria da sottrarre a quella iniziale");
+                System.out.println("Inserisci parte immaginaria ");
                 line=tastiera.readLine();
                 try{
                     im=Double.valueOf(line).doubleValue();
