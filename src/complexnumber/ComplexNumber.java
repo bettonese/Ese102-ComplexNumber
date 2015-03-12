@@ -98,8 +98,8 @@ public class ComplexNumber {
     }
     public ComplexNumber multiply(ComplexNumber multipl){
         ComplexNumber moltiplicazione = new ComplexNumber();
-        double modulo = this.getModulus()*multipl.getModulus();
-        double argomento = this.getArgument()*multipl.getArgument();
+        double modulo = this.getModulus()* multipl.getModulus();
+        double argomento = this.getArgument()+ multipl.getArgument();
         moltiplicazione.setPolar(modulo, argomento);
         return moltiplicazione;     
     }
