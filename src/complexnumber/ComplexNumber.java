@@ -5,6 +5,8 @@ public class ComplexNumber {
     private double im;
     static private double initRe;
     static private double initIm;
+    
+
 
     static public void setInitRectangular(double re, double im){
         initRe=re;
@@ -50,10 +52,16 @@ public class ComplexNumber {
     }
 
     
-    public String formatComplexNumber() { 
+    /*public String formatComplexNumber() { 
         return this.getRe() + "+(" + this.getIm() + ")i";
-    }
+    } */
     
+      /**
+    @param modulus
+    @param argument
+    * 
+            
+    */
     public void setPolar(double modulus, double argument){
         this.im = Math.sin(argument*Math.PI/180)*modulus;
         this.re = Math.cos(argument*Math.PI/180)*modulus;
@@ -103,5 +111,9 @@ public class ComplexNumber {
         return divisione;     
     }
     
+    @Override
+    public String toString(){
+        return this.getRe() + "+(" + this.getIm() + ")i";
+    }
 }
 
