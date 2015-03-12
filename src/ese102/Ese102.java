@@ -221,27 +221,20 @@ public class Ese102 {
             r=sr.multiply(sp);
             System.out.println(sr.toString()+" * "+sp.toString()+" = "+r.toString());
             
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-		}
-    
-	}
+        } 
+        //Parte per verificare se due oggetti sono uguali
+            ComplexNumber a = new ComplexNumber();
+            ComplexNumber b = new ComplexNumber();
+            a.setRectangular(1,-1);
+            b.setRectangular(1,2);
+            if(a == b) {
+                System.out.println("a e b si riferiscono alla medesima istanza");
+            }
+            else {
+                System.out.println("a e b si riferiscono a due istanze differenti");
+            }
+            System.out.println("False se le due parti reali e immaginarie non sono uguali, \ntrue se lo sono: " +a.equals(b) );
+    }
+}
 
     
