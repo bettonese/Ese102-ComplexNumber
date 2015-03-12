@@ -104,7 +104,7 @@ public class ComplexNumber {
         this.im = im;
     }
 
-    
+    //sostituito da toString()
     /*public String formatComplexNumber() { 
         return this.getRe() + "+(" + this.getIm() + ")i";
     } */
